@@ -9,7 +9,7 @@ class ListPublisher extends Component {
         }
     }
     handleDelele =(id)=>{
-        fetch(`https://backend-newaaaaa.herokuapp.com//api/admin/UpdatePublisher/${id[0]}`, {
+        fetch(`https://backend-newaaaaa.herokuapp.com/api/admin/UpdatePublisher/${id[0]}`, {
             method: 'DELETE',
             headers: {
                 'Accept': 'application/json',
@@ -35,7 +35,7 @@ class ListPublisher extends Component {
         {
             publishername = queryString.parse(this.props.location.search).publishername
         }
-        fetch(`https://backend-newaaaaa.herokuapp.com//api/admin/ListPublisher?publishername=${publishername}`,{
+        fetch(`https://backend-newaaaaa.herokuapp.com/api/admin/ListPublisher?publishername=${publishername}`,{
             method: 'GET',
             headers: {
                 'Authorization': `Bearer ${localStorage.getItem('token')}`

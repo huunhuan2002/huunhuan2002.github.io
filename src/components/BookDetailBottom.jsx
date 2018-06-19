@@ -11,7 +11,7 @@ class BookDetailBottom extends React.Component {
     }
 
     componentWillReceiveProps(newProps){
-        fetch("https://backend-newaaaaa.herokuapp.com//api/product/related", {
+        fetch("https://backend-newaaaaa.herokuapp.com/api/product/related", {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

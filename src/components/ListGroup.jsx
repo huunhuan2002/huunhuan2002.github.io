@@ -14,7 +14,7 @@ class ListGroup extends Component {
 	}
 
 	componentDidMount() {
-		fetch("https://backend-newaaaaa.herokuapp.com//api/product/publisher")
+		fetch("https://backend-newaaaaa.herokuapp.com/api/product/publisher")
 			//fetch("https://bookstore-express-backend.herokuapp.com/api/product/new")
 			.then(res => res.json())
 			.then(

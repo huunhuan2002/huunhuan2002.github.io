@@ -18,7 +18,7 @@ class addBook extends Component {
         this.handleUploadImage = this.handleUploadImage.bind(this)
     }
     getType = ()=>{
-        fetch(`https://backend-newaaaaa.herokuapp.com//api/admin/getType`)
+        fetch(`https://backend-newaaaaa.herokuapp.com/api/admin/getType`)
         .then(res => res.json())
         .then(
             (result) => {
@@ -35,7 +35,7 @@ class addBook extends Component {
         );
     }
     getPubliser =()=>{
-        fetch(`https://backend-newaaaaa.herokuapp.com//api/admin/getPublisher`)
+        fetch(`https://backend-newaaaaa.herokuapp.com/api/admin/getPublisher`)
         .then(res => res.json())
         .then(
             (result) => {
@@ -61,7 +61,7 @@ class addBook extends Component {
         })
     }
     fectSubmit = ()=>{
-        fetch(`https://backend-newaaaaa.herokuapp.com//api/admin/addBook`, {
+        fetch(`https://backend-newaaaaa.herokuapp.com/api/admin/addBook`, {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -103,7 +103,7 @@ class addBook extends Component {
         var check = 0
         const formData = new FormData()
         formData.append('file', this.state.imageSelect, this.state.imageSelect.name)
-        axios.post("https://backend-newaaaaa.herokuapp.com//api/admin/uploadImage",formData)
+        axios.post("https://backend-newaaaaa.herokuapp.com/api/admin/uploadImage",formData)
     }
     handleImageChange = (e)=>{
         let reader = new FileReader();

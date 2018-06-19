@@ -48,7 +48,7 @@ class Content extends React.Component{
   }
 
   componentDidMount() {
-	fetch("https://backend-newaaaaa.herokuapp.com//api/product/new")
+	fetch("https://backend-newaaaaa.herokuapp.com/api/product/new")
 	//fetch("https://bookstore-express-backend.herokuapp.com/api/product/new")
     .then(res => res.json())
     .then(
@@ -64,7 +64,7 @@ class Content extends React.Component{
         });
       }
     );
-		fetch("https://backend-newaaaaa.herokuapp.com//api/product/best-seller")
+		fetch("https://backend-newaaaaa.herokuapp.com/api/product/best-seller")
 		//fetch("https://bookstore-express-backend.herokuapp.com/api/product/best-seller")
     .then(res => res.json())
     .then(

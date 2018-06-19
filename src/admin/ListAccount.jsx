@@ -18,7 +18,7 @@ class ListAccount extends Component {
         {
             username = queryString.parse(this.props.location.search).username
         }
-        fetch(`https://backend-newaaaaa.herokuapp.com//api/admin/ListAccount?username=${username}`,{
+        fetch(`https://backend-newaaaaa.herokuapp.com/api/admin/ListAccount?username=${username}`,{
             method: 'GET',
             headers: {
                 'Authorization': `Bearer ${localStorage.getItem('token')}`
@@ -48,7 +48,7 @@ class ListAccount extends Component {
             alert("không được xóa tài khoản hiện tại ")
         }
         else{
-            fetch(`https://backend-newaaaaa.herokuapp.com//api/admin/UpdateAccount/${id[0]}`, {
+            fetch(`https://backend-newaaaaa.herokuapp.com/api/admin/UpdateAccount/${id[0]}`, {
                 method: 'DELETE',
                 headers: {
                     'Accept': 'application/json',

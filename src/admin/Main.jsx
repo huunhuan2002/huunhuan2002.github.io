@@ -14,7 +14,7 @@ class Main extends React.Component {
     }
 
     // AuthorizationToken = () => {
-    //     fetch('https://backend-newaaaaa.herokuapp.com//secret', {
+    //     fetch('https://backend-newaaaaa.herokuapp.com/secret', {
     //         method: 'GET',
     //         headers: {
     //             'Authorization': `bearer ${localStorage.getItem('token')}`,

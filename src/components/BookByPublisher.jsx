@@ -10,7 +10,7 @@ class BookByPublisher extends React.Component {
   }
 
   fetchAPI = (id) => {
-    fetch(`https://backend-newaaaaa.herokuapp.com//api/product/publisher/${id}`)
+    fetch(`https://backend-newaaaaa.herokuapp.com/api/product/publisher/${id}`)
       .then(res => res.json())
       .then(
         (result) => {

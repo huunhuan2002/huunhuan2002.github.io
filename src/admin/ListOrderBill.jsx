@@ -17,7 +17,7 @@ class ListOrderBill extends React.Component {
         {
              date = queryString.parse(this.props.location.search).date
         }
-        fetch(`https://backend-newaaaaa.herokuapp.com//api/admin/ListOrderBill?date=${date}`, {
+        fetch(`https://backend-newaaaaa.herokuapp.com/api/admin/ListOrderBill?date=${date}`, {
             method: 'GET',
             headers: {
                 'Authorization': `Bearer ${localStorage.getItem('token')}`

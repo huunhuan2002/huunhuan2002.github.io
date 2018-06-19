@@ -11,7 +11,7 @@ class addPublisher extends Component {
     }
     handleSubmit = (e)=>{
         e.preventDefault()
-        fetch(`https://backend-newaaaaa.herokuapp.com//api/admin/addPublisher/`, {
+        fetch(`https://backend-newaaaaa.herokuapp.com/api/admin/addPublisher/`, {
             method: 'POSt',
             headers: {
                 'Accept': 'application/json',

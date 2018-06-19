@@ -14,7 +14,7 @@ class UpdateOrderBill extends Component {
         this.handleInput = this.handleInput.bind(this)
       }
     fetchAPI = (id) => {
-        fetch(`https://backend-newaaaaa.herokuapp.com//api/admin/UpdateOrderBill/${id}`)                                                                                                              
+        fetch(`https://backend-newaaaaa.herokuapp.com/api/admin/UpdateOrderBill/${id}`)                                                                                                              
           .then(res => res.json())
           .then(
             (result) => {
@@ -32,7 +32,7 @@ class UpdateOrderBill extends Component {
           );
       }
       getStatus = ()=>{
-        fetch(`https://backend-newaaaaa.herokuapp.com//api/admin/UpdateOrderBill/getStatus`)                                                                                                              
+        fetch(`https://backend-newaaaaa.herokuapp.com/api/admin/UpdateOrderBill/getStatus`)                                                                                                              
         .then(res => res.json())
         .then(
           (result) => {
@@ -63,7 +63,7 @@ class UpdateOrderBill extends Component {
         })
     }
     updateAccount = ()=>{
-        fetch(`https://backend-newaaaaa.herokuapp.com//api/admin/UpdateAccountAdmin`, {
+        fetch(`https://backend-newaaaaa.herokuapp.com/api/admin/UpdateAccountAdmin`, {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -88,7 +88,7 @@ class UpdateOrderBill extends Component {
             )
     }
       handleSubmit=(event)=> {
-        fetch(`https://backend-newaaaaa.herokuapp.com//api/admin/UpdateOrderBill/${this.state.items[0].MaDonDatHang}`, {
+        fetch(`https://backend-newaaaaa.herokuapp.com/api/admin/UpdateOrderBill/${this.state.items[0].MaDonDatHang}`, {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

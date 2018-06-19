@@ -16,7 +16,7 @@ class UpdateInfor extends Component {
     }
 
     fecthAPI = (id)=>{
-        fetch(`https://backend-newaaaaa.herokuapp.com//api/admin/findByAccount/${id}`)                                                                                                              
+        fetch(`https://backend-newaaaaa.herokuapp.com/api/admin/findByAccount/${id}`)                                                                                                              
           .then(res => res.json())
           .then(
             (result) => {
@@ -34,7 +34,7 @@ class UpdateInfor extends Component {
     }
     handleSubmit = (e)=>{
         e.preventDefault()
-        fetch(`https://backend-newaaaaa.herokuapp.com//api/UpdateInfor/${this.state.id}`, {
+        fetch(`https://backend-newaaaaa.herokuapp.com/api/UpdateInfor/${this.state.id}`, {
             method: 'PUT',
             headers: {
                 'Accept': 'application/json',

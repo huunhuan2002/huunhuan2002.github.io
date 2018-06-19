@@ -12,7 +12,7 @@ class UpdateAccount extends Component {
     }
 
     fecthAPI = (id)=>{
-        fetch(`https://backend-newaaaaa.herokuapp.com//api/admin/findByAccount/${id}`)                                                                                                              
+        fetch(`https://backend-newaaaaa.herokuapp.com/api/admin/findByAccount/${id}`)                                                                                                              
           .then(res => res.json())
           .then(
             (result) => {
@@ -30,7 +30,7 @@ class UpdateAccount extends Component {
     }
     handleSubmit = (e)=>{
         e.preventDefault()
-        fetch(`https://backend-newaaaaa.herokuapp.com//api/admin/UpdateAccount/${this.props.match.params.id}`, {
+        fetch(`https://backend-newaaaaa.herokuapp.com/api/admin/UpdateAccount/${this.props.match.params.id}`, {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -61,7 +61,7 @@ class UpdateAccount extends Component {
         this.getAccountType()
     }
     getAccountType = ()=>{
-        fetch(`https://backend-newaaaaa.herokuapp.com//api/admin/getAccountType`)                                                                                                              
+        fetch(`https://backend-newaaaaa.herokuapp.com/api/admin/getAccountType`)                                                                                                              
         .then(res => res.json())
         .then(
           (result) => {

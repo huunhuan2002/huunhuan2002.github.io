@@ -75,7 +75,7 @@ class ChangePassword extends Component {
         let id = user.MaTaiKhoan;
         if(this.KiemTraThongTin())
         {
-            fetch("https://backend-newaaaaa.herokuapp.com//api/changePassword", {
+            fetch("https://backend-newaaaaa.herokuapp.com/api/changePassword", {
                         method: 'POST',
                         headers: {
                             'Accept': 'application/json',

@@ -10,7 +10,7 @@ class BookByCategory extends React.Component {
   }
 
   fetchAPI = (id) => {
-    fetch(`https://backend-newaaaaa.herokuapp.com//api/product/category/${id}`)
+    fetch(`https://backend-newaaaaa.herokuapp.com/api/product/category/${id}`)
       .then(res => res.json())
       .then(
         (result) => {

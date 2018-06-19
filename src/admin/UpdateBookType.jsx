@@ -10,7 +10,7 @@ class UpdateBookType extends Component {
         this.handleSubmit = this.handleSubmit.bind(this)
     }
     componentDidMount(){
-        fetch(`https://backend-newaaaaa.herokuapp.com//api/admin/findByBookType/${this.props.match.params.id}`)
+        fetch(`https://backend-newaaaaa.herokuapp.com/api/admin/findByBookType/${this.props.match.params.id}`)
         .then(res => res.json())
         .then(
             (result) => {
@@ -29,7 +29,7 @@ class UpdateBookType extends Component {
     }
     handleSubmit = (e)=>{
         e.preventDefault()
-        fetch(`https://backend-newaaaaa.herokuapp.com//api/admin/UpdateBookType/${this.props.match.params.id}`, {
+        fetch(`https://backend-newaaaaa.herokuapp.com/api/admin/UpdateBookType/${this.props.match.params.id}`, {
             method: 'PUT',
             headers: {
                 'Accept': 'application/json',

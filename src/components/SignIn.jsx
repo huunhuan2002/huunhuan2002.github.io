@@ -17,7 +17,7 @@ class SignIn extends React.Component {
     onClickHandle = (e) => {
         e.preventDefault()
         this.setState({ message: 'ok' });
-        fetch("https://backend-newaaaaa.herokuapp.com//login", {
+        fetch("https://backend-newaaaaa.herokuapp.com/login", {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

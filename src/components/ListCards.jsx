@@ -14,7 +14,7 @@ class ListCards extends React.Component{
 			const gia = sach.GiaSanPham;
 
 			return (
-				<Card key={"key_"+ma} tenSach={ten} tenTacGia={tacGia} giaBan={gia} maSach={ma} hinhAnh={"https://backend-newaaaaa.herokuapp.com//images/Product/"+url}/>
+				<Card key={"key_"+ma} tenSach={ten} tenTacGia={tacGia} giaBan={gia} maSach={ma} hinhAnh={"https://backend-newaaaaa.herokuapp.com/images/Product/"+url}/>
 			);
 		});
 

@@ -55,7 +55,7 @@ class ShoppingCart extends React.Component {
     }
 
     ThemDonDatHang = (DDH, callback) => {
-        fetch('https://backend-newaaaaa.herokuapp.com//api/order/add', {
+        fetch('https://backend-newaaaaa.herokuapp.com/api/order/add', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -86,7 +86,7 @@ class ShoppingCart extends React.Component {
     }
 
     ThemCTDonDatHang = (CT, callback) => {
-        fetch('https://backend-newaaaaa.herokuapp.com//api/orderDetail/add', {
+        fetch('https://backend-newaaaaa.herokuapp.com/api/orderDetail/add', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -137,7 +137,7 @@ class ShoppingCart extends React.Component {
     }
 
     CapNhatSoLuongTon = (MaSanPham, SoLuong) => {
-        fetch('https://backend-newaaaaa.herokuapp.com//api/product/updateInventory', {
+        fetch('https://backend-newaaaaa.herokuapp.com/api/product/updateInventory', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

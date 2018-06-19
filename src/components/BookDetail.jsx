@@ -26,7 +26,7 @@ class BookDetail extends React.Component {
     }
 
     fetchAPI = (id) => {
-        fetch(`https://backend-newaaaaa.herokuapp.com//api/product/${id}`)
+        fetch(`https://backend-newaaaaa.herokuapp.com/api/product/${id}`)
             .then(res => res.json())
             .then(
                 (result) => {
@@ -44,7 +44,7 @@ class BookDetail extends React.Component {
     }
 
     fetchAPIComment = (id) => {
-        fetch(`https://backend-newaaaaa.herokuapp.com//api/comment/product/${id}`)
+        fetch(`https://backend-newaaaaa.herokuapp.com/api/comment/product/${id}`)
             .then(res => res.json())
             .then(
                 (result) => {
@@ -61,7 +61,7 @@ class BookDetail extends React.Component {
             );
     }
     fetchListComment = (id) => {
-        fetch(`https://backend-newaaaaa.herokuapp.com//api/comment/getList/${id}`)
+        fetch(`https://backend-newaaaaa.herokuapp.com/api/comment/getList/${id}`)
             .then(res => res.json())
             .then(
                 (result) => {
@@ -185,7 +185,7 @@ class BookDetail extends React.Component {
                 ThoiGian: tg,
             }
 
-            fetch('https://backend-newaaaaa.herokuapp.com//api/comment', {
+            fetch('https://backend-newaaaaa.herokuapp.com/api/comment', {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json',
@@ -262,7 +262,7 @@ class BookDetail extends React.Component {
             <React.Fragment>
                 <div className="clearfix" id="productDetail">
                     <div className="w40p thumbnail pull-left">
-                        <img src={`https://backend-newaaaaa.herokuapp.com//images/Product/${this.state.items.HinhURL}`} alt={`${this.state.items.TenSanPham}`} />
+                        <img src={`https://backend-newaaaaa.herokuapp.com/images/Product/${this.state.items.HinhURL}`} alt={`${this.state.items.TenSanPham}`} />
                     </div>
                     <div className="w60p pull-right">
                         <ul>

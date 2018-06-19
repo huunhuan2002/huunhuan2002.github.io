@@ -14,7 +14,7 @@ class ListType extends React.Component {
     }
 
     componentDidMount() {
-        fetch("https://backend-newaaaaa.herokuapp.com//api/product/type")
+        fetch("https://backend-newaaaaa.herokuapp.com/api/product/type")
             //fetch("https://bookstore-express-backend.herokuapp.com/api/product/new")
             .then(res => res.json())
             .then(

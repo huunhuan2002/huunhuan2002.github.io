@@ -16,7 +16,7 @@ class SearchResult extends Component {
         let MaLoaiSanPham = queryString.parse(this.props.location.search).MaLoaiSanPham
         let MaHangSanXuat = queryString.parse(this.props.location.search).MaHangSanXuat
         let TenTacGia = queryString.parse(this.props.location.search).TenTacGia
-        let url = "https://backend-newaaaaa.herokuapp.com//api/searchResult?"+
+        let url = "https://backend-newaaaaa.herokuapp.com/api/searchResult?"+
                   `TenSach=${TenSach}`+
                   `&GiaTu=${GiaTu}`+
                   `&GiaDen=${GiaDen}`+

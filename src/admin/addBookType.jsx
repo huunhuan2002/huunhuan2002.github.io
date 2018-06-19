@@ -12,7 +12,7 @@ class addBookType extends Component {
   
     handleSubmit = (e)=>{
         e.preventDefault()
-        fetch(`https://backend-newaaaaa.herokuapp.com//api/admin/addBookType`, {
+        fetch(`https://backend-newaaaaa.herokuapp.com/api/admin/addBookType`, {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

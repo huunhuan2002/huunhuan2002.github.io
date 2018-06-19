@@ -10,7 +10,7 @@ class Search extends Component {
         }
     }
     getType = ()=>{
-        fetch(`https://backend-newaaaaa.herokuapp.com//api/admin/getType`)
+        fetch(`https://backend-newaaaaa.herokuapp.com/api/admin/getType`)
         .then(res => res.json())
         .then(
             (result) => {
@@ -27,7 +27,7 @@ class Search extends Component {
         );
     }
     getPubliser =()=>{
-        fetch(`https://backend-newaaaaa.herokuapp.com//api/admin/getPublisher`)
+        fetch(`https://backend-newaaaaa.herokuapp.com/api/admin/getPublisher`)
         .then(res => res.json())
         .then(
             (result) => {

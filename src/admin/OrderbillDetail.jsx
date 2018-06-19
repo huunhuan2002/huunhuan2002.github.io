@@ -8,7 +8,7 @@ class OrderbillDetail extends Component {
         }
     }
     componentDidMount(){
-        fetch(`https://backend-newaaaaa.herokuapp.com//api/admin/getOrderbillDetail/${this.props.match.params.id}`, {
+        fetch(`https://backend-newaaaaa.herokuapp.com/api/admin/getOrderbillDetail/${this.props.match.params.id}`, {
             method: 'GET',
             headers: {
                 'Authorization': `Bearer ${localStorage.getItem('token')}`

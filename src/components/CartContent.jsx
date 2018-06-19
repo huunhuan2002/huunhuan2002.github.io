@@ -13,7 +13,7 @@ class CartContent extends React.Component {
     }
 
     fetchAPI = (id) => {
-        fetch(`https://backend-newaaaaa.herokuapp.com//api/product/${id}`)
+        fetch(`https://backend-newaaaaa.herokuapp.com/api/product/${id}`)
             .then(res => res.json())
             .then(
                 (result) => {
@@ -78,7 +78,7 @@ class CartContent extends React.Component {
                         <tr>
                             <td width="20%">
                                 <input type="hidden" name="MaSanPham" value={this.state.items.MaSanPham} />
-                                <Card key={"key_" + ma} tenSach={ten} tenTacGia={tacGia} giaBan={gia} maSach={ma} hinhAnh={"https://backend-newaaaaa.herokuapp.com//images/Product/" + url} />
+                                <Card key={"key_" + ma} tenSach={ten} tenTacGia={tacGia} giaBan={gia} maSach={ma} hinhAnh={"https://backend-newaaaaa.herokuapp.com/images/Product/" + url} />
                             </td>
                             <td>&nbsp;</td>
                             <td><input type="number" className="form-control wA" name="txtSoLuong" id="txtSoLuong" ref="txtSoLuong" defaultValue={this.props.SoLuong} onChange={this.handleChange} />{alert}</td>

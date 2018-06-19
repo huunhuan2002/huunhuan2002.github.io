@@ -11,7 +11,7 @@ class ListBook extends React.Component{
         }
     }
     handleDelete = (id)=>{
-        fetch(`https://backend-newaaaaa.herokuapp.com//api/admin/UpdateBook/${id[0]}`, {
+        fetch(`https://backend-newaaaaa.herokuapp.com/api/admin/UpdateBook/${id[0]}`, {
             method: 'DELETE',
             headers: {
                 'Accept': 'application/json',
@@ -37,7 +37,7 @@ class ListBook extends React.Component{
         {
              bookname = queryString.parse(this.props.location.search).bookname
         }
-        fetch(`https://backend-newaaaaa.herokuapp.com//api/admin/ListBook?bookname=${bookname}`,{
+        fetch(`https://backend-newaaaaa.herokuapp.com/api/admin/ListBook?bookname=${bookname}`,{
             method: 'GET',
             headers: {
                 'Authorization': `Bearer ${localStorage.getItem('token')}`

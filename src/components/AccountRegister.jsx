@@ -35,7 +35,7 @@ class AccountRegister extends React.Component {
     //     }
     // }
     checkUsername = () => {
-        return Promise.all([fetch(`https://backend-newaaaaa.herokuapp.com//api/checkUsername/${this.state.TenDangNhap}`)
+        return Promise.all([fetch(`https://backend-newaaaaa.herokuapp.com/api/checkUsername/${this.state.TenDangNhap}`)
             .then(res => res.json())])
     }
     KiemTraThongTin = () => {
@@ -133,7 +133,7 @@ class AccountRegister extends React.Component {
                     checkUsername: value[0].sl
                 })
                 if (that.KiemTraThongTin()) {
-                    fetch("https://backend-newaaaaa.herokuapp.com//api/register", {
+                    fetch("https://backend-newaaaaa.herokuapp.com/api/register", {
                         method: 'POST',
                         headers: {
                             'Accept': 'application/json',

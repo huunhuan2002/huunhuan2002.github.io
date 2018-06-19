@@ -9,7 +9,7 @@ class ListBookType extends Component {
         }
     }
     handleDelele =(id)=>{
-        fetch(`https://backend-newaaaaa.herokuapp.com//api/admin/UpdateBookType/${id[0]}`, {
+        fetch(`https://backend-newaaaaa.herokuapp.com/api/admin/UpdateBookType/${id[0]}`, {
             method: 'DELETE',
             headers: {
                 'Accept': 'application/json',
@@ -35,7 +35,7 @@ class ListBookType extends Component {
         {
             booktypename = queryString.parse(this.props.location.search).booktypename
         }
-        fetch(`https://backend-newaaaaa.herokuapp.com//api/admin/ListBookType?booktypename=${booktypename}`,{
+        fetch(`https://backend-newaaaaa.herokuapp.com/api/admin/ListBookType?booktypename=${booktypename}`,{
             method: 'GET',
             headers: {
                 'Authorization': `Bearer ${localStorage.getItem('token')}`

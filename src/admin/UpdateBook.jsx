@@ -18,7 +18,7 @@ class UpdateBook extends Component {
         this.handleUploadImage = this.handleUploadImage.bind(this)
     }
     getType = ()=>{
-        fetch(`https://backend-newaaaaa.herokuapp.com//api/admin/getType`)
+        fetch(`https://backend-newaaaaa.herokuapp.com/api/admin/getType`)
         .then(res => res.json())
         .then(
             (result) => {
@@ -35,7 +35,7 @@ class UpdateBook extends Component {
         );
     }
     getPubliser =()=>{
-        fetch(`https://backend-newaaaaa.herokuapp.com//api/admin/getPublisher`)
+        fetch(`https://backend-newaaaaa.herokuapp.com/api/admin/getPublisher`)
         .then(res => res.json())
         .then(
             (result) => {
@@ -52,7 +52,7 @@ class UpdateBook extends Component {
         );
     }
     fetchAPI = (id) => {
-        fetch(`https://backend-newaaaaa.herokuapp.com//api/admin/findByBook/${id}`)
+        fetch(`https://backend-newaaaaa.herokuapp.com/api/admin/findByBook/${id}`)
             .then(res => res.json())
             .then(
                 (result) => {
@@ -78,7 +78,7 @@ class UpdateBook extends Component {
         })
     }
     fectSubmit = ()=>{
-        fetch(`https://backend-newaaaaa.herokuapp.com//api/admin/UpdateBook/${this.props.match.params.id}`, {
+        fetch(`https://backend-newaaaaa.herokuapp.com/api/admin/UpdateBook/${this.props.match.params.id}`, {
             method: 'PUT',
             headers: {
                 'Accept': 'application/json',
@@ -120,7 +120,7 @@ class UpdateBook extends Component {
         var check = 0
         const formData = new FormData()
         formData.append('file', this.state.imageSelect, this.state.imageSelect.name)
-        axios.post("https://backend-newaaaaa.herokuapp.com//api/admin/uploadImage",formData)
+        axios.post("https://backend-newaaaaa.herokuapp.com/api/admin/uploadImage",formData)
     }
     handleImageChange = (e)=>{
         let reader = new FileReader();
@@ -161,7 +161,7 @@ class UpdateBook extends Component {
 			);
         })
         const img = this.state.imagePreviewURL == ''?
-                    (<img  src={`https://backend-newaaaaa.herokuapp.com//images/Product/${this.state.items[0].HinhURL}`} alt={`${this.state.items[0].TenSanPham}`}/>)
+                    (<img  src={`https://backend-newaaaaa.herokuapp.com/images/Product/${this.state.items[0].HinhURL}`} alt={`${this.state.items[0].TenSanPham}`}/>)
                     :(<img src={this.state.imagePreviewURL} />)
         const item = this.state.items.map((value,index)=>{
             return(

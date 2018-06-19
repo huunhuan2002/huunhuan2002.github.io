@@ -10,7 +10,7 @@ class UpdatePublisher extends Component {
         this.handleSubmit = this.handleSubmit.bind(this)
     }
     componentDidMount(){
-        fetch(`https://backend-newaaaaa.herokuapp.com//api/admin/findByPublisherAdmin/${this.props.match.params.id}`)
+        fetch(`https://backend-newaaaaa.herokuapp.com/api/admin/findByPublisherAdmin/${this.props.match.params.id}`)
         .then(res => res.json())
         .then(
             (result) => {
@@ -28,7 +28,7 @@ class UpdatePublisher extends Component {
     }
     handleSubmit = (e)=>{
         e.preventDefault()
-        fetch(`https://backend-newaaaaa.herokuapp.com//api/admin/UpdatePublisher/${this.props.match.params.id}`, {
+        fetch(`https://backend-newaaaaa.herokuapp.com/api/admin/UpdatePublisher/${this.props.match.params.id}`, {
             method: 'PUT',
             headers: {
                 'Accept': 'application/json',
