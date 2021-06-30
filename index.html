@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="robots" content="noindex, nofollow">
+        <title>Login Theme</title>
+        <style>
+            @font-face{
+                font-family: element-icons;
+                src:url(fonts/element-icons.535877f5.woff) format("woff"),
+                url(fonts/element-icons.732389de.ttf) format("truetype");
+                font-weight:400;
+                font-display:"auto";
+                font-style:normal
+            }
+        </style>
+        <link rel="stylesheet" href="css/login.css" >
+    </head>
+    <body>
+        <div class="login-container">
+            <div class="login-form">
+                <img src="img/logo_gt.png" />
+                <div class="title-container">
+                    <h3 class="title">GAME TECHNICAL</h3>
+                </div>
+                <button type="button" id="o365" class="el-button el-button--primary el-button--large btn-container">
+                    <img src="img/o365.png" />
+                    Đăng nhập bằng O365
+                </button>
+                <div class="mb-20">Hoặc</div>
+                <form id="form_ep" class="el-form el-form--label-left hide" auto-complete="on" method="POST" action="${url.loginAction}">
+                    <div class="el-form-item is-required el-form-item--medium">
+                        <!---->
+                        <div class="el-form-item__content">
+                            <span class="svg-container">
+                                <span class="el-icon-user-solid"></span>
+                            </span>
+                            <div class="el-input el-input--medium">
+                                <!---->
+                                <input tabindex="1" type="text" autocomplete="on" placeholder="Email" name="email" class="el-input__inner" />
+                                <!----><!----><!----><!---->
+                            </div>
+                            <!---->
+                        </div>
+                    </div>
+                    <div class="el-form-item el-tooltip is-required el-form-item--medium" aria-describedby="el-tooltip-2558" tabindex="0">
+                        <!---->
+                        <div class="el-form-item__content">
+                            <span class="svg-container">
+                                <span class="el-icon-lock"></span>
+                            </span>
+                            <div class="el-input el-input--medium">
+                                <!---->
+                                <input tabindex="2" type="password" autocomplete="on" placeholder="Mật khẩu" name="password" class="el-input__inner" />
+                                <!----><!----><!----><!---->
+                            </div>
+                            <!---->
+                        </div>
+                    </div>
+                    <!---->
+                    <button type="submit" class="el-button el-button--primary el-button--large">Đăng nhập</button>
+                </form>
+                <form id="form_otp" class="el-form el-form--label-left hide" auto-complete="on" method="POST" action="${url.loginAction}">
+                    <div class="el-form-item is-required el-form-item--medium">
+                        <!---->
+                        <div class="el-form-item__content">
+                            <span class="svg-container">
+                                <span class="el-icon-user-solid"></span>
+                            </span>
+                            <div class="el-input el-input--medium">
+                                <!---->
+                                <input tabindex="1" type="text" autocomplete="on" placeholder="Email" name="email" class="el-input__inner" />
+                                <!----><!----><!----><!---->
+                            </div>
+                            <!---->
+                        </div>
+                    </div>
+                    <div class="el-form-item el-tooltip is-required el-form-item--medium" aria-describedby="el-tooltip-2558" tabindex="0">
+                        <!---->
+                        <div class="el-form-item__content">
+                            <span class="svg-container">
+                                <span class="el-icon-lock"></span>
+                            </span>
+                            <div class="el-input el-input--medium">
+                                <!---->
+                                <input tabindex="2" type="number" autocomplete="on" placeholder="Mã OTP" name="passcode" class="el-input__inner" />
+                                <!----><!----><!----><!---->
+                            </div>
+                            <!---->
+                        </div>
+                    </div>
+                    <!---->
+                    <button type="submit" class="el-button el-button--primary el-button--large">Đăng nhập</button>
+                </form>
+                <div class="mb-20 ep">
+                    <button id="otp" type="submit" class="el-button el-button--primary el-button--large btn-container">
+                        <img src="img/otp.png" />
+                        OTP
+                    </button>
+                    <button id="ep" type="submit" class="el-button el-button--primary el-button--large btn-container">
+                        <img src="img/ep.png" />
+                        Email / password
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script src="js/login.js"></script>
+    </body>
+</html>

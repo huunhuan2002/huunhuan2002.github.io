@@ -1,0 +1,232 @@
+@import url(https://fonts.googleapis.com/css?family=Muli:300,400,700&subset=vietnamese);
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Muli;
+}
+
+html, body {
+    height: 100%;
+}
+
+.login-container {
+    min-height: 100%;
+    width: 100%;
+    background-color: #EEF5F9;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.login-container .login-form>img {
+    width: 90px;
+}
+
+.login-container .title-container {
+    position: relative;
+}
+
+.login-container .login-form {
+    background: linear-gradient(rgba(74, 79, 87, 0.9), rgba(45, 58, 75, 0.9));
+    position: relative;
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    padding: 20px 40px;
+    box-shadow: 3px 3px 7px 0px rgb(45 58 75 / 80%);
+    border-radius: 15px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.ep {
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+    border-top: 1px solid lightgrey;
+}
+
+.ep > .btn-container {
+    width: auto;
+    flex: 1 1;
+}
+
+.ep > .btn-container:not(:nth-child(1)) {
+    margin-left: 10px !important;
+}
+
+.ep > .btn-container:nth-child(1) img {
+    width: 34px;
+    left: 75px;
+}
+
+.ep > .btn-container:nth-child(2) img {
+    width: 29px;
+    left: 37px;
+    top: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+.el-button {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.login-container .el-input input {
+    margin-top: 0;
+}
+
+.login-container .title-container .title {
+    font-size: 26px;
+    color: #eee;
+    margin: 0 auto 40px auto;
+    font-weight: 700;
+    background: -webkit-linear-gradient(
+93deg
+,#33c5f8 20%,#2c74d7 94%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.login-container .login-form .el-button--primary.el-button--large {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    -webkit-appearance: none;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    -webkit-transition: .1s;
+    transition: .1s;
+    font-weight: 400;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.login-container .login-form .el-button--primary.el-button--large:hover {
+    background: #fff;
+    color: #2d3a4b;
+    border-color: #2d3a4b;
+}
+
+.login-container .el-form-item {
+    border: 1px solid hsla(0,0%,100%,.1);
+    border-radius: 5px;
+    color: #454545;
+    margin-bottom: 22px;
+    background: rgba(0,0,0,.1);
+}
+
+.el-form-item:after, .el-form-item:before {
+    display: table;
+    content: "";
+}
+
+.el-form-item--medium .el-form-item__content, .el-form-item--medium .el-form-item__label {
+    line-height: 36px;
+}
+
+.el-form-item__content:after, .el-form-item__content:before {
+    display: table;
+    content: "";
+}
+
+.login-container .svg-container {
+    padding: 6px 5px 6px 15px;
+    color: #889aa4;
+    vertical-align: middle;
+    width: 30px;
+    display: inline-block;
+}
+
+[class*=" el-icon-"], [class^=el-icon-] {
+    font-family: element-icons!important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: baseline;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.el-icon-user-solid:before {
+    content: "\e7a5";
+}
+
+.login-container .el-input {
+    display: inline-block;
+    height: 47px;
+    width: 85%;
+    position: relative;
+}
+
+.login-container .el-input input {
+    color: #fff;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    border-radius: 0;
+    padding: 12px 5px 12px 15px;
+    height: 47px;
+    width: 100%;
+    caret-color: #fff;
+    display: inline-block;
+    font-size: inherit;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.el-input--medium {
+    font-size: 14px;
+}
+
+.el-form-item__content:after {
+    clear: both;
+}
+
+.el-form-item:after {
+    clear: both;
+}
+
+.el-icon-lock:before {
+    content: "\e6e5";
+}
+
+.btn-container {
+    position: relative;
+}
+
+.btn-container > img {
+    position: absolute;
+    width: 60px;
+    left: 130px;
+    top: 2px;
+}
+
+input::-webkit-input-placeholder{color:#c0c4cc}
