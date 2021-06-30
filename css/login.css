@@ -52,7 +52,7 @@ html, body {
 
 .ep {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     padding-top: 15px;
     border-top: 1px solid lightgrey;
 }
@@ -68,12 +68,12 @@ html, body {
 
 .ep > .btn-container:nth-child(1) img {
     width: 34px;
-    left: 75px;
+    left: calc(100% / 2 - 51px);
 }
 
 .ep > .btn-container:nth-child(2) img {
     width: 29px;
-    left: 37px;
+    left: calc(100% / 2 - 89px);
     top: 5px;
 }
 
@@ -225,8 +225,52 @@ html, body {
 .btn-container > img {
     position: absolute;
     width: 60px;
-    left: 130px;
+    left: calc(100% / 2 - 121px);
     top: 2px;
 }
 
 input::-webkit-input-placeholder{color:#c0c4cc}
+
+@media (max-width: 575px) {
+    .login-container {
+        padding: 20px;
+    }
+
+    .ep > .btn-container {
+        flex-basis: 100%;
+    }
+
+    .ep > .btn-container:not(:nth-child(1)) {
+        margin-left: unset !important;
+    }
+
+    .login-form {
+        padding: 15px !important;
+    }
+}
+
+@media (max-width: 630px) {
+    .login-container {
+        padding: 20px;
+    }
+}
+
+/* @media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1400px) {
+
+} */
